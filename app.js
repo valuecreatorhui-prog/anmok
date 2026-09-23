@@ -42,7 +42,7 @@
   /* 메인 */
   function home() {
     const hero = document.getElementById("hero");
-    hero.innerHTML = `<div class="rule"></div><h1>${esc(S.tagline)}</h1><p>${esc(S.intro)}</p>`;
+    hero.innerHTML = `<div class="rule"></div><h1>${esc(S.tagline)}</h1><p>${esc(S.intro)}</p>${S.badge ? `<div class="badge">${esc(S.badge)}</div>` : ""}`;
 
     const filters = document.getElementById("filters"), grid = document.getElementById("grid");
     const counts = Object.fromEntries(CATS.map(c => [c.id, ITEMS.filter(i => i.category === c.id).length]));

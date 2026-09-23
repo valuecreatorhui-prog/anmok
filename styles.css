@@ -48,6 +48,9 @@ p { margin: 0; }
 .hero h1 { font-size: clamp(32px, 4.6vw, 56px); max-width: 17em; font-weight: 500; letter-spacing: -0.035em; line-height: 1.15; }
 .hero p { margin-top: 28px; max-width: 30em; color: var(--ink-2); font-size: 15.5px; line-height: 1.8; }
 
+.badge { display: inline-flex; align-items: center; gap: 10px; margin-top: 30px; padding: 8px 14px; border: 1px solid var(--ink); border-radius: 2px; font-size: 12.5px; letter-spacing: .02em; }
+.badge::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--ink); }
+
 /* ───────── 필터: 밑줄 탭 ───────── */
 .filters { display: flex; gap: 28px; padding: 0 0 36px; border-bottom: 1px solid var(--line); margin-bottom: 40px; }
 .chip {
@@ -108,7 +111,8 @@ p { margin: 0; }
 @media (max-width: 720px) { .scene { grid-template-columns: 1fr; gap: 20px; } }
 
 /* 기준: 숫자·제목·글, 박스 없음 */
-.criteria { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+.criteria { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px 28px; }
+@media (max-width: 960px) { .criteria { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .criteria .c { padding-top: 20px; border-top: 1px solid var(--line); }
 .criteria .num { color: var(--ink-3); font-size: 11px; letter-spacing: .14em; margin-bottom: 18px; font-variant-numeric: tabular-nums; }
 .criteria .c b { font-size: 17px; font-weight: 500; display: block; margin-bottom: 10px; letter-spacing: -0.02em; }
