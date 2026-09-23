@@ -94,7 +94,7 @@
         ${facts.length ? `<dl class="facts">${facts.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join("")}</dl>` : ""}
         <section class="block"><h2>왜 골랐나</h2><p>${esc(it.reason)}</p></section>
         ${it.experience ? `<section class="block"><h2>직접 ${esc(cat.verb || "겪어보니")}</h2><p>${esc(it.experience)}</p></section>` : ""}
-        ${it.notFor ? `<section class="block notfor"><h2>이런 분께는 권하지 않아요</h2><p>${esc(it.notFor)}</p></section>` : ""}
+        ${it.forWhom ? `<section class="block forwhom"><h2>이런 분께 권해요</h2><p>${esc(it.forWhom)}</p></section>` : ""}
         ${it.tags?.length ? `<div class="tags">${it.tags.map(t => `<span class="tag">#${esc(t)}</span>`).join("")}</div>` : ""}
         <div class="actions">
           ${it.link ? `<a class="btn primary" href="${esc(it.link)}" target="_blank" rel="noopener">${it.category === "place" ? "지도에서 보기" : "구매처 보기"}</a>` : ""}

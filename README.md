@@ -22,7 +22,7 @@
    - `id`: 영문·숫자·하이픈만, 겹치지 않게
    - `category`: `thing`(물건) / `food`(음식) / `place`(장소) 중 하나
    - `image`: `"img/파일명.jpg"` — 비우면 기본 이미지
-   - `reason`(왜 골랐나), `experience`(직접 써보니/먹어보니/가보니), `notFor`(권하지 않는 분)
+   - `reason`(왜 골랐나), `experience`(직접 써보니/먹어보니/가보니), `forWhom`(이런 분께 권해요)
    - `link`: 구매처 또는 지도 링크 (없으면 비움)
 3. 장면으로 묶고 싶으면 `SCENES`의 `items`에 그 `id`를 넣습니다.
 4. 저장 후 GitHub에 올리면 1~2분 안에 사이트에 반영됩니다.
