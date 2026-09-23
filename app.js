@@ -35,7 +35,7 @@
         <span class="cat" data-cat="${it.category}">${esc(catById[it.category]?.label || "")}</span>
         <h3>${esc(it.name)}</h3>
         <p class="one">${esc(it.oneLine)}</p>
-        <div class="meta"><span>${esc(it.price || "")}</span><span>고른 이유 →</span></div>
+        <div class="meta"><span>${esc(it.price || "")}</span><span>왜 골랐나 →</span></div>
       </div></a>`;
   }
 
@@ -92,7 +92,7 @@
         <h1>${esc(it.name)}</h1>
         <p class="one">${esc(it.oneLine)}</p>
         ${facts.length ? `<dl class="facts">${facts.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join("")}</dl>` : ""}
-        <section class="block"><h2>고른 이유</h2><p>${esc(it.reason)}</p></section>
+        <section class="block"><h2>왜 골랐나</h2><p>${esc(it.reason)}</p></section>
         ${it.comparedWith ? `<section class="block"><h2>무엇과 비교했나</h2><p>${esc(it.comparedWith)}</p></section>` : ""}
         ${it.experience ? `<section class="block"><h2>직접 ${esc(cat.verb || "겪어보니")}</h2><p>${esc(it.experience)}</p></section>` : ""}
         ${it.notFor ? `<section class="block notfor"><h2>이런 분께는 권하지 않아요</h2><p>${esc(it.notFor)}</p></section>` : ""}
