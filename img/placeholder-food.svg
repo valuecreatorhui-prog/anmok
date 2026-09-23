@@ -1,7 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
-<rect width="800" height="600" fill="#eddcae"/>
-<circle cx="400" cy="300" r="150" fill="none" stroke="#b8963a" stroke-width="3" opacity=".6"/>
-<circle cx="400" cy="300" r="96" fill="none" stroke="#b8963a" stroke-width="2" opacity=".45"/>
-<text x="400" y="312" text-anchor="middle" font-family="Noto Serif KR, Apple SD Gothic Neo, serif" font-size="34" fill="#b8963a">음식</text>
-<text x="400" y="540" text-anchor="middle" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="18" fill="#b8963a" opacity=".7">사진을 넣어 주세요</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000"><rect width="800" height="1000" fill="#f4f4f2"/><text x="400" y="510" text-anchor="middle" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="20" letter-spacing="4" fill="#b5b5b3">사진 준비 중</text></svg>

@@ -35,7 +35,7 @@
         <span class="cat" data-cat="${it.category}">${esc(catById[it.category]?.label || "")}</span>
         <h3>${esc(it.name)}</h3>
         <p class="one">${esc(it.oneLine)}</p>
-        <div class="meta"><span>${esc(it.price || "")}</span><span>왜 골랐나 →</span></div>
+        <div class="meta"><span>${esc(it.price || "")}</span><span>왜 골랐나</span></div>
       </div></a>`;
   }
 
@@ -63,7 +63,7 @@
 
     const scenes = document.getElementById("scenes");
     if (scenes) scenes.innerHTML = SCENES.map(sc => `<article class="scene">
-      <h3>${esc(sc.title)}</h3><p>${esc(sc.body)}</p>
+      <div class="lead"><h3>${esc(sc.title)}</h3><p>${esc(sc.body)}</p></div>
       <div class="row">${sc.items.map(id => ITEMS.find(i => i.id === id)).filter(Boolean).map(it => `
         <a class="mini" href="item.html?id=${encodeURIComponent(it.id)}">
           <div class="thumb"><img src="${esc(imgOf(it))}" alt=""></div>
